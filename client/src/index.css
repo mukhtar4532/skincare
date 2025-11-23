@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+body {
+  @apply bg-[#EFF5E1] m-0 p-0 box-border overflow-x-hidden;
+}
+
+@layer components {
+  #nav {
+    @apply flex items-center justify-between my-8 mx-7 lg:my-11 lg:mx-23 cursor-pointer;
+
+    h1 {
+      @apply bg-[#EFF5E1] text-2xl sm:text-3xl text-[#2D3B36] font-bold uppercase;
+    }
+    .navData {
+      @apply hidden sm:flex sm:items-center sm:justify-center sm:gap-4 sm:text-[#2D3B36] lg:text-lg sm:p-4;
+    }
+    .navIcon {
+      @apply flex items-center justify-center gap-2 sm:gap-4;
+      img {
+        @apply bg-[#FEFFF4] text-[#1C274C] font-normal p-1 sm:p-3 rounded-full;
+      }
+    }
+  }
+
+  #hero {
+    @apply text-[#2D3B36] md:my-8 md:mx-7 lg:my-11 lg:mx-23;
+
+    .div1 {
+      @apply flex flex-col items-center justify-center md:flex-row md:items-center md:justify-between md:gap-4;
+      p {
+        @apply mt-40 md:-mt-32 lg:-mt-76 p-2 pt-4 md:py-6 lg:py-16 w-84 h-36 md:w-94 md:h-88 lg:w-96 lg:h-52 lg:font-semibold text-center;
+      }
+      .headDiv {
+        @apply -mt-70 md:mt-10 lg:mt-4 mb-140 md:mb-80 lg:w-fit lg:h-52;
+      }
+      .headDiv h1 {
+        @apply text-6xl md:text-5xl lg:text-8xl text-center font-extrabold uppercase;
+      }
+
+      img {
+        @apply w-full h-96 lg:w-48 lg:h-48 md:w-36 md:h-36 md:-mt-70 lg:-mt-76 md:rounded-2xl;
+      }
+    }
+
+    .div2 {
+      @apply relative inline md:-top-16 lg:top-144;
+
+      .imgDiv {
+        @apply relative -top-196 md:-top-36 lg:-top-206 md:left-2 lg:left-118 w-fit md:w-[360px] md:h-[400px] lg:rounded-3xl;
+      }
+
+      .imgDiv1 {
+        @apply absolute z-20 bg-[#EFF5E1] flex items-center justify-center w-76 h-16 md:w-76 rounded-4xl text-sm px-2 py-1 bottom-6 lg:bottom-10 left-7;
+      }
+
+      .imgDiv1 img {
+        @apply w-14 h-14 rounded-full;
+      }
+
+      .imgDiv1 p {
+        @apply px-3;
+      }
+
+      .headDiv2 {
+        @apply text-[74px] md:text-[160px] lg:text-[310px] text-center uppercase font-extrabold absolute -top-110 -left-2 md:top-24 lg:-top-192 md:-left-12 lg:-left-28 -z-10;
+      }
+
+      .shopBtn {
+        @apply bg-[#2D3B36] text-[#EFF5E1] px-8 py-4 text-center rounded-4xl absolute bottom-80 left-28 lg:bottom-276 lg:left-2 md:left-140 md:bottom-90;
+      }
+    }
+  }
+}
