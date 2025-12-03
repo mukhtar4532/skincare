@@ -32,7 +32,7 @@ body {
         @apply mt-40 md:-mt-32 lg:-mt-76 p-2 pt-4 md:py-6 lg:py-16 w-84 h-36 md:w-94 md:h-88 lg:w-96 lg:h-52 lg:font-semibold text-center;
       }
       .headDiv {
-        @apply -mt-70 md:mt-10 lg:mt-4 mb-140 md:mb-80 lg:w-fit lg:h-52;
+        @apply -mt-70 md:mt-10 lg:mt-4 mb-156 md:mb-80 lg:w-fit lg:h-52;
       }
       .headDiv h1 {
         @apply text-6xl md:text-5xl lg:text-8xl text-center font-extrabold uppercase;
@@ -47,7 +47,10 @@ body {
       @apply relative inline md:-top-16 lg:top-144;
 
       .imgDiv {
-        @apply relative -top-196 md:-top-36 lg:-top-206 md:left-2 lg:left-118 w-fit md:w-[360px] md:h-[400px] lg:rounded-3xl;
+        @apply relative -top-210 md:-top-36 lg:-top-200 md:left-2 lg:left-108 w-fit md:w-[360px] md:h-[400px];
+      }
+      .imgDiv img {
+        @apply lg:rounded-3xl;
       }
 
       .imgDiv1 {
@@ -63,11 +66,85 @@ body {
       }
 
       .headDiv2 {
-        @apply text-[74px] md:text-[160px] lg:text-[310px] text-center uppercase font-extrabold absolute -top-110 -left-2 md:top-24 lg:-top-192 md:-left-12 lg:-left-28 -z-10;
+        @apply text-[74px] md:text-[160px] lg:text-[285px] text-center uppercase font-extrabold absolute -top-117 -left-2 md:top-24 lg:-top-178 md:-left-12 lg:-left-28 -z-10;
       }
 
       .shopBtn {
-        @apply bg-[#2D3B36] text-[#EFF5E1] px-8 py-4 text-center rounded-4xl absolute bottom-80 left-28 lg:bottom-276 lg:left-2 md:left-140 md:bottom-90;
+        @apply bg-[#2D3B36] text-[#EFF5E1] px-8 py-4 lg:px-10 text-center rounded-4xl absolute bottom-74 left-28 lg:bottom-276 lg:left-2 md:left-140 md:bottom-90;
+      }
+    }
+  }
+
+  #description {
+    @apply bg-[#FEFFF4] text-[#2D3B36] relative p-8 md:p-12 lg:p-14 -top-64 md:-top-54 lg:-top-64 flex flex-col items-start justify-start;
+
+    .para {
+      p {
+        @apply text-xl md:text-3xl lg:text-4xl leading-8 md:leading-[46px] lg:leading-[72px] mb-12 md:mb-24 lg:mb-0 tracking-tight;
+      }
+    }
+
+    .combine {
+      @apply text-[#2D3B36] lg:mt-44 lg:flex lg:justify-between lg:gap-20;
+      .left {
+        .left1 {
+          @apply mb-12;
+          button {
+            @apply border-2 border-[#2D3B36] flex justify-center items-center gap-3 md:gap-5 px-3 py-2 md:px-5 md:py-4 lg:px-7 rounded-4xl mb-10 md:mb-16 lg:mb-22;
+            div {
+              @apply bg-[#2D3B36] p-2 md:p-3 rounded-full;
+            }
+          }
+
+          h2 {
+            @apply text-3xl md:text-5xl uppercase mb-6 md:mb-7 w-[336px] md:w-[533px] lg:w-[610px];
+          }
+          .subPara {
+            @apply text-[#525349] tracking-tight w-[328px] md:w-[605px] lg:mb-20;
+          }
+        }
+
+        .left2 {
+          @apply mb-14 md:mb-20 md:mt-8;
+          .left2A {
+            @apply flex gap-5 mb-8 md:mt-12;
+            .left2Ap {
+              @apply text-4xl md:text-5xl font-semibold bg-clip-text text-transparent bg-linear-to-t from-[#293330] to-white;
+            }
+            .left2B {
+              h2 {
+                @apply text-3xl md:text-5xl mb-3 tracking-tight;
+              }
+              p {
+                @apply text-[#525349] tracking-tighter w-[250px] md:w-[430px] md:mt-4;
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        @apply relative -mx-8 md:-mx-14 w-[356px] md:w-fit lg:w-[650px];
+        .mainImg2 {
+          @apply lg:rounded-4xl;
+        }
+        .imgDiv1 {
+          @apply bg-[#EFF5E1] absolute bottom-18 md:bottom-28 lg:bottom-40 left-10 md:left-52 lg:left-40 flex items-center justify-center gap-5 md:gap-9 px-4 py-3 md:px-3 rounded-4xl md:rounded-full w-[270px] md:w-[400px] h-16 md:h-26;
+
+          p {
+            @apply text-sm md:text-lg text-[#2D3B36];
+          }
+          .imgDiv1Icon {
+            @apply bg-[#2D3B36] py-2 px-6 md:p-7 lg:p-6 rounded-3xl md:rounded-full;
+          }
+        }
+
+        .sub {
+          @apply flex justify-between items-center px-2 md:px-16 lg:px-0 mt-5 md:mt-6 md:mb-6;
+          p {
+            @apply text-[#2D3B36] text-sm md:text-xl tracking-tight uppercase hover:underline cursor-pointer font-semibold;
+          }
+        }
       }
     }
   }
